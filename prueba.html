@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+      rel="stylesheet"
+    />
+
+
+
+  </head>
+
+  <body class="d-flex justify-content-column">
+    <div id="resultado">
+      <!-- nombre -->
+      <input type="text" name="loginForm" id="nombre" placeholder="nombre" />
+      <label for="validationCustom01" class="form-control-sm"></label>
+      <div class="valid-feedback"></div>
+      <!-- apellidos -->
+      <input  type="text" apellidos="loginForm" id="apellido" placeholder="apellidos" />
+      <label for="validationCustom01" class="form-control-sm"></label>
+      <div class="valid-feedback"></div>
+      <!-- documento -->
+      <input  type="text" identificacion="loginForm" id="documento" placeholder="Documento"/>
+      <label for="validationCustom01" class="form-control-sm"></label>
+      <div class="valid-feedback"></div>
+      <!-- rh -->
+      <input type="text" RH="loginForm" id="rh" placeholder="RH" />
+      <label for="validationCustom01" class="form-control-sm"></label>
+      <div class="valid-feedback"></div>
+      <!-- genero -->
+      <input type="text" Genero="loginForm" id="genero" placeholder="Genero" />
+      <label for="validationCustom01" class="form-control-sm"></label>
+      <div class="valid-feedback"></div>
+      <!-- edad -->
+      <input type="text" Edad="loginForm" id="edad" placeholder="Edad" />
+      <label for="validationCustom01" class="form-control-sm"></label>
+      <div class="valid-feedback"></div>
+      <!-- celular -->
+      <input type="text" Celular="loginForm" id="celular" placeholder="Celular" />
+      <label for="validationCustom01" class="form-control-sm"></label>
+      <div class="valid-feedback"></div>
+      <!-- celular sos -->
+      <input type="text" Celular SOS="loginForm" id="celularSos" placeholder="Celular SOS" />
+      <label for="validationCustom01" class="form-control-sm"></label>
+      <div class="valid-feedback">Looks good!</div>
+      <!-- dia -->
+      <input type="text" Dia="loginForm" id="name" placeholder="Dia" />
+      <label for="validationCustom01" class="form-control-sm"></label>
+      <div class="valid-feedback">Looks good!</div>
+      <br>
+      <br>
+      <br>
+
+      
+
+
+
+      <button onclick="validacion()"
+      type="submit"
+      class="btn btn-primary btn-block mb-2 bt"
+      
+      >
+      Ingresar datos
+      </button>
+    </div>
+
+
+    <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+    ></script>
+
+    <script src="assets/hello.js"></script>
+  </body>
+</html>
+
+
+
+
+
+/*
+let datos = [
+  nombre,
+  apellidos,
+  identificacion,
+  sangre,
+  genero,
+  edad,
+  celular,
+  celularSos,
+  diasemana,
+]*/
+/*
+function resultado() {
+
+
+  for (let i in datos) {
+   
+
+   
+
+
+
+   
+
+    
+    console.log(datos);
+    if (datos[5] < 18) {
+      alert(`El ingreso no es valido no es mayor de 18 años.`);
+      return;
+    }
+    let diaNew = new Date();
+    if (datos[4] == "femenino" && dia.getDate() == 4) {
+      alert(`El ingreso no valido hoy es noche de chicos.`);
+      return;
+    }
+
+    if (datos[4] == "masculino" && dia.getDate() == 5) {
+      alert(`El ingreso no valido hoy es noche de chicas.`);
+      return;
+    } else {
+      alert(`Bienvenid0 puede ingresar.`);
+  }
+}
+*/
+/*
+let usuarioBD = [
+  {
+    nombre: "",
+    apellidos: "",
+    identificacion: "",
+    rh: "",
+    genero: "",
+    edad: "",
+    celular: "",
+    celularSos: "",
+  },
+];
+
+function login(usuarioBD) {
+  let name = document.getElementById("nombre").value;
+  let lastname = document.getElementById("apellidos").value;
+  let id = document.getElementById("identificacion").value;
+  let rh = document.getElementById("rh").value;
+  let gender = document.getElementById("genero").value;
+  let age = document.getElementById("edad").value;
+  let cellphone = document.getElementById("celular").value;
+  let sosphone = document.getElementById("celularSos").value;
+
+  if (
+    !nombre ||
+    !apellidos ||
+    !identificacion ||
+    !rh ||
+    !genero ||
+    !edad ||
+    !celular ||
+    !celuarSos
+  ) {
+    alert("Todos los campos son obligatorios");
+    return;
+  }
+
+  if (edad < 18) {
+    alert("La edad mínima para ingresar es de 18 años");
+    return;
+  }
+
+  let hoy = new Date();
+  if (hoy.getDay() == 4 && genero == "Femenino") {
+    alert("Ingreso permitido solo para mujeres");
+    return;
+  }
+
+  if (hoy.getDay() == 5 && genero == "Masculino") {
+    alert("Ingreso permitido solo para hombres");
+    return;
+  }
+
+  if (genero.length > 1) alert("Solo se admite un género");
+
+  return "Bienvenid@";
+}
+*/
